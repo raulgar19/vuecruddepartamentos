@@ -36,12 +36,12 @@
             >
               Update
             </router-link>
-            <button
+            <router-link
               class="btn btn-danger ms-2"
-              @click="deleteDepartamento(departamento.numero)"
+              :to="/delete/ + departamento.numero"
             >
               Delete
-            </button>
+            </router-link>
           </td>
         </tr>
       </tbody>
@@ -59,19 +59,12 @@ export default {
   data() {
     return {
       departamentos: [],
-      status: false,
     };
   },
   methods: {
-    deleteDepartamento(id) {
-      service.deleteDepartamento(id).then(() => {
-        this.getDepartamentos();
-      });
-    },
     getDepartamentos() {
       service.getDepartamentos().then((result) => {
         this.departamentos = result;
-        this.status = true;
       });
     },
   },

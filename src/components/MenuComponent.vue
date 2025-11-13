@@ -22,35 +22,8 @@
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/create"
-              >Crear depratamento</router-link
+              >Crear departamento</router-link
             >
-          </li>
-          <li class="nav-item dropdown">
-            <router-link
-              class="nav-link dropdown-toggle"
-              to="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </router-link>
-            <ul class="dropdown-menu">
-              <li>
-                <router-link class="dropdown-item" to="#">Action</router-link>
-              </li>
-              <li>
-                <router-link class="dropdown-item" to="#"
-                  >Another action</router-link
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <router-link class="dropdown-item" to="#"
-                  >Something else here</router-link
-                >
-              </li>
-            </ul>
           </li>
         </ul>
       </div>
